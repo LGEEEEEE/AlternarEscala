@@ -102,3 +102,28 @@ button {
         display: none;
     }
 }
+/* Adicione este código no final do seu arquivo style.css */
+
+#escala-resultado h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#escala-resultado h3:first-child {
+    margin-top: 0;
+}
+
+#escala-resultado p {
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #34495e;
+    text-align: left;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}

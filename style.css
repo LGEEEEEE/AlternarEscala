@@ -1,0 +1,104 @@
+/* Importa uma fonte mais moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* Área onde a escala é exibida */
+.escala-container {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #bdc3c7;
+}
+
+#escala-resultado {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #34495e;
+    text-align: left;
+    white-space: pre-wrap; /* Garante a quebra de linha */
+    line-height: 1.6;
+}
+
+/* Estilo dos botões */
+.botoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#gerar-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+#gerar-btn:hover {
+    background-color: #2980b9;
+}
+
+#imprimir-btn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#imprimir-btn:hover {
+    background-color: #7f8c8d;
+}
+
+/* Regras para impressão: esconde os botões ao imprimir */
+@media print {
+    body {
+        padding: 0;
+        background-color: #fff;
+    }
+    .container {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    .botoes, p {
+        display: none;
+    }
+}
